@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <title>Basics 1 jquery</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <style>
+    .emphasis {
+        font-weight: bold;
+    }
+
+    /* LIST #1 */
+    .list1 {
+        font-size: 3.2em;
+    }
+    .list1 ul {
+        list-style:none;
+        text-align:center;
+        border-top:2px solid #B12EA5;
+        border-bottom:2px solid #B12EA5;
+        padding:10px 0;
+    }
+    .list1 ul li {
+        display:inline;
+        text-transform:uppercase;
+        padding:0 10px;
+        letter-spacing:10px;
+    }
+    .list1 ul li a {
+        text-decoration:none;
+        color:#eee;
+    }
+    .list1 ul li a:hover {
+        text-decoration:underline;
+    }
+
+    </style>
+
+    <script>
+
+    $(function() {
+        $('li:first-child').addClass('emphasis');
+        $('div').addClass('list1');
+    });
+
+    </script>
+</head>
+<body>
+
+    <div>
+    <ul>
+        <li>Blog</li>
+        <li>Archivo</li>
+        <li>Favoritos</li>
+        <li>Contacto</li>
+    </ul>
+    </div>
+</body>
+</html>
